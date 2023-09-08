@@ -6,7 +6,7 @@ import java.net.http.HttpResponse;
 
 public class FetchData {
     public static void main(String[] args) throws IOException, InterruptedException {
-        var url="https://api.chucknorris.io/jokes/random";
+        var url="https://api.zippopotam.us/us/33162";
         var request= HttpRequest.newBuilder().GET().uri(URI.create(url)).build();
         var client= HttpClient.newBuilder().build();
         var response=client.send(request, HttpResponse.BodyHandlers.ofString());
